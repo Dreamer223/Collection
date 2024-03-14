@@ -13,6 +13,9 @@ public class Main {
         employeeHandbook.findEmployeeByTabNum(3);
         employeeHandbook.findEmployeeByExperience(44);
         employeeHandbook.findEmployeeByPhoneNum("6");
-
+        employeeHandbook.addEmployeeToHandbook(new Employee(10, "10", "Иванович10", 1));
+        employeeHandbook.findEmployeeByTabNum(10);
+//        employeeHandbook.findEmployeeByExperience(1);
+//        employeeHandbook.findEmployeeByPhoneNum("10");
     }
 }
