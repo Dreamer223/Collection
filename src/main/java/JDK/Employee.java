@@ -8,13 +8,15 @@ public class Employee {
     private String phoneNum;
     private String name;
     private int experience;
+    EmployeeHandbook employeeHandbook = new EmployeeHandbook();
 
-    public Employee(int tabNum, String phoneNum, String name, int experience) {
+    public Employee(int tabNum, String phoneNum, String name, int experience, EmployeeHandbook employeeHandbook) {
         this.tabNum = tabNum;
         this.phoneNum = phoneNum;
         this.name = name;
         this.experience = experience;
-        EmployeeHandbook.addEmployeeToHandbook(this);
+        this.employeeHandbook = employeeHandbook;
+        employeeHandbook.addEmployeeToHandbook(this);
 
 
     }

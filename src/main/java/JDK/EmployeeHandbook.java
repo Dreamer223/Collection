@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeHandbook {
-    private static List<Employee> employeeHandbookList;
+    private List<Employee> employeeHandbookList;
 
     public EmployeeHandbook() {
         employeeHandbookList = new ArrayList<>();
@@ -23,7 +23,7 @@ public class EmployeeHandbook {
 
     }
 
-    public static void addEmployeeToHandbook(Employee employee){
+    public void addEmployeeToHandbook(Employee employee){
         employeeHandbookList.add(employee);
     }
 }
